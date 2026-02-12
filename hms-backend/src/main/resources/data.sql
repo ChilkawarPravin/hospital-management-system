@@ -1,0 +1,86 @@
+-- =====================================================
+-- Hospital Management System - Sample Test Data
+-- =====================================================
+-- Note: Passwords are BCrypt encoded for 'password123'
+-- Run this AFTER application starts (tables need to exist first)
+-- Or use the application's registration API to create users.
+
+-- Sample Doctors (password: password123)
+-- BCrypt hash for 'password123': $2a$10$dXJ3SW6G7P50lP/PassHash (use application register API instead)
+
+-- To create sample data, use the following API calls:
+
+-- 1. Register Doctor - Dr. Sarah Johnson (Cardiologist)
+-- POST http://localhost:8080/api/auth/register
+-- {
+--   "name": "Dr. Sarah Johnson",
+--   "email": "sarah.johnson@hms.com",
+--   "password": "password123",
+--   "phone": "9876543210",
+--   "role": "DOCTOR",
+--   "specialization": "Cardiology",
+--   "qualification": "MD, DM Cardiology",
+--   "experienceYears": 12,
+--   "consultationFee": 800.00,
+--   "bio": "Senior Cardiologist with 12 years of experience in interventional cardiology."
+-- }
+
+-- 2. Register Doctor - Dr. Rajesh Patel (Orthopedics)
+-- POST http://localhost:8080/api/auth/register
+-- {
+--   "name": "Dr. Rajesh Patel",
+--   "email": "rajesh.patel@hms.com",
+--   "password": "password123",
+--   "phone": "9876543211",
+--   "role": "DOCTOR",
+--   "specialization": "Orthopedics",
+--   "qualification": "MS Orthopedics, DNB",
+--   "experienceYears": 8,
+--   "consultationFee": 600.00,
+--   "bio": "Orthopedic surgeon specializing in joint replacement and sports medicine."
+-- }
+
+-- 3. Register Doctor - Dr. Priya Sharma (Dermatology)
+-- POST http://localhost:8080/api/auth/register
+-- {
+--   "name": "Dr. Priya Sharma",
+--   "email": "priya.sharma@hms.com",
+--   "password": "password123",
+--   "phone": "9876543212",
+--   "role": "DOCTOR",
+--   "specialization": "Dermatology",
+--   "qualification": "MD Dermatology",
+--   "experienceYears": 6,
+--   "consultationFee": 500.00,
+--   "bio": "Dermatologist with expertise in cosmetic and clinical dermatology."
+-- }
+
+-- 4. Register Patient - Amit Kumar
+-- POST http://localhost:8080/api/auth/register
+-- {
+--   "name": "Amit Kumar",
+--   "email": "amit.kumar@gmail.com",
+--   "password": "password123",
+--   "phone": "9988776655",
+--   "role": "PATIENT",
+--   "age": 30,
+--   "gender": "MALE",
+--   "bloodGroup": "B+",
+--   "address": "123, MG Road, Pune",
+--   "emergencyContact": "9988776644"
+-- }
+
+-- 5. Register Patient - Sneha Verma
+-- POST http://localhost:8080/api/auth/register
+-- {
+--   "name": "Sneha Verma",
+--   "email": "sneha.verma@gmail.com",
+--   "password": "password123",
+--   "phone": "9900112233",
+--   "role": "PATIENT",
+--   "age": 25,
+--   "gender": "FEMALE",
+--   "bloodGroup": "O+",
+--   "address": "456, FC Road, Pune",
+--   "emergencyContact": "9900112244"
+-- }
